@@ -1,0 +1,425 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+
+  font-family: "Arial", sans-serif;
+  color: #404040;
+  background-color: white;
+  min-width: 1280px;
+}
+
+.container {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+/* Хэдер */
+
+.page-header {
+  padding: 10px;
+  color: #c3c3c3;
+  background-color: #363636;
+  background-image: url("img/header-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 120px;
+}
+
+.header-top .btn {
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.333;
+  text-align: center;
+  width: 169px;
+  height: 49px;
+  border: #ffff solid 1px;
+  margin-top: 30px;
+  box-sizing: border-box;
+  padding-top: 13.5px;
+  border-radius: 2px;
+}
+
+
+
+
+.header-logo {
+  margin-top: 24px;
+}
+
+.main-nav {
+  list-style: none;
+  display: flex;
+  padding-top: 43.5px;
+}
+
+.main-nav:not(last-child) {
+  margin-right: 42.5px;
+}
+
+.main-nav li {
+  text-transform: uppercase;
+  margin-right: 49px;
+}
+
+.main-nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.main-nav a:hover {
+  text-decoration: underline;
+}
+
+.main-nav a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* кнопки */
+.btn {
+  color: #a38b70;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 1.333;
+
+}
+.cat-reference .btn {
+  margin-top: 75.5px;
+  margin-top: 75.5px;
+    text-align: center;
+    padding-top: 11px;
+}
+.reviews .btn {
+  margin-top: 71px;
+  margin-top: 71px;
+    text-align: center;
+    padding-top: 12px
+}
+
+.popular-and-price .btn {
+  margin-top: 70px;
+  text-align: center;
+  padding: auto;
+  padding: 0 auto;
+  padding: auto;
+  padding-top: 11px;
+}
+
+.cat-reference .btn,
+.reviews .btn,
+.popular-and-price .btn {
+ 
+  border: 2px solid #a38b70;
+  width: 171px;
+  height: 49px;
+  box-sizing: border-box;
+}
+
+.btn:hover {
+  color: #8d745a;
+}
+
+.btn:active {
+  color: rgba(141, 116, 90, 0.3);
+}
+
+.btn-description {
+text-align: center;
+}
+
+.btn-buy {
+text-align:center;
+}
+.promo {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 55px;
+  font-family: "Georgia", serif;
+  text-align: center;
+  margin-bottom: 190px;
+}
+
+.promo a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.section-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Наши особенности */
+
+
+.features ul {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+  justify-content: center;
+  padding-top: 27px;
+
+}
+
+ul {
+  margin: 0;
+}
+
+
+.feature-item:nth-child(2) {
+margin-left: 10px;
+}
+
+
+
+.feature-item p {
+  font-size: 16px;
+  font-family: "Arial";
+  color: rgb(64, 64, 64);
+  line-height: 1.5;
+  text-align: center;
+  padding-left: 35px;
+  padding-right: 24px;
+  display: inline-block;
+  padding-bottom: 40px;
+}
+
+
+.feature-item:first-child {
+  border-left: none;
+}
+
+.feature-title {
+  font-size: 30px;
+  font-family: "Georgia", serif;
+  color: #a38b70;
+  padding-top:88px;
+  text-align: center;
+}
+
+.feature-choice {
+  background: url(img/feature-1.png) top center no-repeat;
+  margin-bottom: 1px;
+  margin-left: 7px;
+}
+
+
+
+.feature-quality {
+  background: url(img/feature-2.png) top center no-repeat;
+  margin-bottom: 1px;
+  margin-left: 16px;
+}
+
+.feature-security {
+  background: url(img/feature-3.png) top center no-repeat;
+  margin-right: 4px;
+  margin-left: 17px;
+  margin-bottom: 1px;
+}
+
+/* справочник */
+.cat-reference {
+  background-color: #f2f2f2;
+  padding-bottom: 40px;
+}
+
+.cat-reference-content dt {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.cat-reference-content h3 {
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+
+}
+
+.cat-reference-content h3:first-child {
+  margin-top: 18px;
+  margin-bottom: 12px;
+
+}
+
+
+
+
+
+
+
+.cat-reference-content i {
+  margin-top: 25px;
+  margin-left: 2px;
+}
+
+.cat-reference-content dd {
+  display: flex;
+  margin-left: 0;
+  margin-bottom: 48px;
+  margin-right: 170px;
+}
+
+.cat-reference-content img {
+  width: 100px;
+  height: 100px;
+  display: block;
+
+}
+
+.cat-reference-content p {
+  font-size: 16px;
+  color: rgb(64, 64, 64);
+  text-align: left;
+  margin-right: 20px;
+  margin-left: 31px;
+  margin-top: -2px;
+  word-spacing: 1px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+
+
+
+.section-title {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 55px;
+  font-family: "Georgia", serif;
+  color: #a38b70;
+  margin-top: 70px;
+  margin-bottom: 22px;
+}
+
+.price-list {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.price-list th {
+  font-weight: normal;
+  text-align: left;
+}
+
+.price-list td {
+  border: 1px solid #333333;
+}
+
+.price-list th,
+.price-list td {
+  padding: 5px 10px;
+}
+
+.price-list .price-number {
+  text-align: center;
+}
+
+.price-list .price-name {
+  font-weight: bold;
+}
+
+.feedback-form-group {
+  padding: 10px 0;
+}
+
+.page-footer {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #eeeeee;
+}
+
+/* отзывы */
+.reviews {
+  padding-bottom: 80px;
+}
+.reviews-list {
+  display: flex;
+  flex-direction: row;
+justify-content: center;}
+
+.review-item {
+  border-left: 3px solid #a38b70;
+  margin-left: 0;
+
+}
+
+.review-item p {
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Arial";
+  color: rgb(64, 64, 64);
+  line-height: 1.5;
+  text-align: left;
+}
+
+cite {
+  padding-left: 56px;
+  font-weight: bold;
+}
+
+/* популярные товары */
+
+.popular-and-price {
+  background-color: #f2f2f2;
+}
+
+.popular-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: -36px;
+  margin-left: 1px;
+  margin-top: 41px;
+}
+
+.popular-items h3 {
+  margin-top: 0;
+}
+
+.catalog-description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+.catalog-item {
+box-sizing: border-box;
+}
+
+.catalog-btn {
+  display: flex;
+  flex-direction: row;
+  
+
+}
+
+.catalog-btn .btn {
+  background-color: #a38b70;
+  font-size: 18px;
+  font-family: "Arial";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.333;
+  text-align: center;
+  padding: 10px;
+  margin-top: 0;
+}
+
+/* Обратная связь */
+.feedback-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
