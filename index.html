@@ -114,7 +114,7 @@
             </div>
             <div class="popular-items">
                 <div class="catalog-item">
-                    <img src="img/glasses-1.jpg" alt="очки «Классика жанра»" width="306" height="206">
+                    <div><img src="img/glasses-1.jpg" alt="очки «Классика жанра»" width="306" height="206"></div>
                     <div class="catalog-description">
                         <h3>Очки «Классика жанра»</h3>
                         <b>300 р.</b>
@@ -141,7 +141,7 @@
                         <h3>Очки «Базилис»</h3>
                         <b>500 р.</b>
                     </div>
-                    .<div class="catalog-btn">
+                    <div class="catalog-btn">
                         <a class="btn btn-description" href="#">Описание</a>
                         <a class="btn btn-buy" href="#">Купить</a>
                     </div>
@@ -193,20 +193,22 @@
                 <form class="feedback-form" action="/keksby-mail" method="post">
                     <div class="feedback-form-group">
                         <label for="fullname">Представьтесь, пожалуйста:</label>
-                        <input type="text" name="fullname" id="fullname">
+                        <input type="text" name="fullname" id="fullname" placeholder="Имя «Прозвище» Фамилия">
                     </div>
-                    <div class="feedback-form-group">
-                        <label for="phone">Контактный телефон:</label>
-                        <input type="text" name="phone" id="phone">
-                    </div>
-                    <div class="feedback-form-group">
-                        <label for="email">Электронная почта:</label>
-                        <input type="text" name="email" id="email">
+                    <div class="feedback-form-group-wripper">
+                        <div class="feedback-form-group feedback-form-group-phone">
+                            <label for="phone">Контактный телефон:</label>
+                            <input type="text" placeholder="8 (XXX) XXX-XX-XX" name="phone" id="phone" required>
+                        </div>
+                        <div class="feedback-form-group  feedback-form-group-email">
+                            <label for="email">Электронная почта:</label>
+                            <input type="text" name="email" id="email" placeholder="E-mail" required>
+                        </div>
                     </div>
                     <div class="checkbox-area">
                         <label>
                             <input type="checkbox" name="subscription">
-                            Я согласен получать спам и смс на телефон
+                            <p>Я согласен получать спам и смс на телефон</p>
                         </label>
                     </div>
                     <div class="feedback-form-group">
@@ -217,63 +219,64 @@
                             <option value="3">Жалоба в Роспотребнадзор</option>
                         </select>
                     </div>
-                    <div class="feedback-form-group">
+                    <div class="feedback-form-group feedback-form-group-message">
                         <label for="message">Текст обращения:</label>
-                        <textarea name="message" id="message"></textarea>
+                        <textarea name="message" id="message" placeholder="Введите текст вашего обращения"></textarea>
                     </div>
-                    <input type="submit" class="btn" value="Отправить">
+                    <input class="feedback-form-btn" type="submit" class="btn" value="Отправить">
                 </form>
-                <img src="img/feedback-img.png" alt="">
+                <img class="feedback-form-img" src="img/feedback-img.png" alt="">
             </div>
         </div>
     </div>
     <!-- футер -->
     <div class="page-footer">
-        <div class="footer-top">
-            <div class="footer-logo">
-                <img src="img/logo.png" alt="The Great Keksby" width="205" height="55">
-            </div>
-            <a class="btn" href="#">Заказать</a>
-        </div>
-
-        <div class="footer-middle">
-            <div class="footer-menu">
-                <h3>Магазин</h3>
-                <ul>
-                    <li><a href="#">Домики</a></li>
-                    <li><a href="#">Одежда</a></li>
-                    <li><a href="#">Очки</a></li>
-                </ul>
-            </div>
-            <div class="footer-menu">
-                <h3>Отзывы</h3>
-                <ul>
-                    <li><a href="#">Показать</a></li>
-                    <li><a href="#">Оставить</a></li>
-                </ul>
-            </div>
-            <div class="footer-menu">
-                <h3>Прайс-лист</h3>
-                <ul>
-                    <li><a href="#">Скачать прайс</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <div class="footer-social">
-                <b>Давайте дружить!</b>
-                <a class="social-btn" href="https://vk.com/htmlacademy">Вконтакте</a>
-                <a class="social-btn" href="https://facebook.com/htmlacademy">Фейсбук</a>
-                <a class="social-btn" href="https://instagram.com/htmlacademy">Инстаграм</a>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="img/logo.png" alt="The Great Keksby" width="205" height="55">
+                </div>
+                <a class="btn page-footer-btn" href="#">Заказать</a>
             </div>
 
-            <div class="footer-copyright">
-                С <span class="heart">любовью</span> для <a href="https://htmlacademy.ru">HTML Academy</a>
+            <div class="footer-middle">
+                <div class="footer-menu">
+                    <h4>Магазин</h3>
+                        <ul>
+                            <li><a href="#">Домики</a></li>
+                            <li><a href="#">Одежда</a></li>
+                            <li><a href="#">Очки</a></li>
+                        </ul>
+                </div>
+                <div class="footer-menu">
+                    <h4>Отзывы</h3>
+                        <ul>
+                            <li><a href="#">Показать</a></li>
+                            <li><a href="#">Оставить</a></li>
+                        </ul>
+                </div>
+                <div class="footer-menu">
+                    <h4>Прайс-лист</h3>
+                        <ul>
+                            <li><a href="#">Скачать прайс</a></li>
+                        </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <h4>Давайте дружить!</h4>
+                <div class="footer-social">
+                    <a class="social-btn-vk" href="https://vk.com/htmlacademy"></a>
+                    <a class="social-btn-facebook" href="https://facebook.com/htmlacademy"></a>
+                    <a class="social-btn-instagram" href="https://instagram.com/htmlacademy"></a>
+                </div>
+
+                <div class="footer-copyright">
+                    С <span class="heart">любовью</span> для <a href="https://htmlacademy.ru">HTML Academy</a>
+                </div>
             </div>
         </div>
     </div>
-
 </body>
 
 </html>
